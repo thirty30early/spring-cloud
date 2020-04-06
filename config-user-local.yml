@@ -1,1 +1,10 @@
-# spring-cloud
+server: 
+  port: 8765
+spring: 
+  application:
+    name: config-user
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
